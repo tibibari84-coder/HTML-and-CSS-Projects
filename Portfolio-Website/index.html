@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Tibor Bari, a web designer and software and web development student at AOLCC Scarborough, and founder of Tiby Design Studio in Toronto.">
+  <meta name="author" content="Tibor Bari">
+  <meta name="theme-color" content="#1f3d36">
+  <title>Tibor Bari | Web Designer and Student Portfolio</title>
+  <link rel="icon" href="images/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Outfit:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <noscript>
+    <style>
+      @media (max-width: 699px) {
+        .nav-toggle { display: none !important; }
+        .site-nav { display: grid !important; }
+      }
+    </style>
+  </noscript>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home">
+        <img src="images/mark.svg" alt="" width="36" height="36">
+        <span>Tibor Bari</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="menu-label">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="home-heading">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Tiby Design Studio · Toronto</p>
+          <h1 id="home-heading">Tibor Bari</h1>
+          <p class="lede">Web designer and software and web development student at AOLCC Scarborough.</p>
+          <p>I build clear, responsive pages with HTML, CSS, and Bootstrap. This portfolio presents the coursework stored in this repository and introduces Tiby Design Studio, my design practice in Toronto.</p>
+          <div class="hero-actions">
+            <a class="button" href="#work">See the coursework</a>
+            <a class="button button-secondary" href="#contact">Prepare a note</a>
+          </div>
+        </div>
+
+        <aside class="studio-card" aria-label="Studio snapshot">
+          <img src="images/mark.svg" alt="Monogram for Tibor Bari" width="64" height="64">
+          <p class="studio-card-kicker">Currently studying</p>
+          <dl class="fact-list">
+            <div>
+              <dt>School</dt>
+              <dd>AOLCC Scarborough</dd>
+            </div>
+            <div>
+              <dt>Program</dt>
+              <dd>Software and Web Developer, Academy of Learning</dd>
+            </div>
+            <div>
+              <dt>Practice</dt>
+              <dd>HTML, CSS, and Bootstrap</dd>
+            </div>
+            <div>
+              <dt>Public code</dt>
+              <dd><a href="https://github.com/tibibari84-coder" target="_blank" rel="me noopener noreferrer">github.com/tibibari84-coder<span class="visually-hidden"> (opens in a new tab)</span></a></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="band" id="about" aria-labelledby="about-heading">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 id="about-heading">Designer, student, and studio founder</h2>
+          <p>I am Tibor Bari, a web designer in Toronto and the founder of Tiby Design Studio. I study software and web development at AOLCC Scarborough, in the Software and Web Developer program at Academy of Learning.</p>
+          <p>This site is the final portfolio for my CSS and Bootstrap coursework. The projects in the work section are the pages already in this repository, described from the files themselves.</p>
+          <p>Tiby Design Studio is the name of my design practice. Here it is introduced through work I can open and review: page structure, typography, responsive layout, and a Bootstrap cinema site.</p>
+        </div>
+        <div class="practice-panel">
+          <h3>Practiced in this repository</h3>
+          <ul>
+            <li>Semantic HTML and in-page navigation</li>
+            <li>CSS type, color, hover effects, and media queries</li>
+            <li>Layouts for phone, tablet, and desktop widths</li>
+            <li>Bootstrap 5 components with a custom theme</li>
+            <li>Forms with labels and required fields</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-work" id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <p class="eyebrow">Work</p>
+        <h2 id="work-heading">Course projects in this repository</h2>
+        <p class="section-intro">Listed from the latest project to the earliest. Each card opens the original page with a relative link, so the same path works locally and on GitHub Pages under this repository.</p>
+
+        <div class="project-grid">
+          <article class="project-card project-card--feature">
+            <div class="project-media project-media--logo">
+              <img src="../Academy-Cinemas/images/logo.png" alt="Academy Cinemas logo in gold script" width="1941" height="1123">
+            </div>
+            <div class="project-body">
+              <p class="project-index">Latest project</p>
+              <h3>Academy Cinemas</h3>
+              <p>A Bootstrap 5.2 cinema page with a collapsing navigation bar, a Now Playing menu, three movie cards, ticket selectors, and a contact form. Custom CSS sets the theater colors, the hero, and the cards. Bootstrap’s CSS and JavaScript load from a CDN, so that page needs a network connection.</p>
+              <ul class="tags" aria-label="Techniques used in Academy Cinemas">
+                <li>HTML</li>
+                <li>Bootstrap 5.2</li>
+                <li>Custom CSS</li>
+              </ul>
+              <p class="project-path"><code>Academy-Cinemas/index.html</code></p>
+              <a class="text-link" href="../Academy-Cinemas/index.html">Open Academy Cinemas</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="../Simple-Recipes/images/skillet-pizza.jpeg" alt="Sliced skillet pizza and broccoli from the Simple Recipes featured recipe" width="1020" height="680">
+            </div>
+            <div class="project-body">
+              <h3>Simple Recipes</h3>
+              <p>A recipe page with a sticky navigation bar, a CSS dropdown, a featured skillet pizza, and flip cards for pasta, chicken, pork, biscuits, fish, and dessert. The stylesheet uses Josefin Slab and Sacramento, hover states, and breakpoints from narrow phones through wide screens. About and contact sections follow the recipes.</p>
+              <ul class="tags" aria-label="Techniques used in Simple Recipes">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsive</li>
+              </ul>
+              <p class="project-path"><code>Simple-Recipes/index.html</code></p>
+              <a class="text-link" href="../Simple-Recipes/index.html">Open Simple Recipes</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media project-media--effect" aria-hidden="true">
+              <div class="effect-frame">
+                <span class="effect-photo"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>CSS Effects Challenge</h3>
+              <p>A short page that loads Poppins from Google Fonts and scales a photograph on hover. The photograph comes from picsum.photos, so it appears when that remote image is available. The preview on this card is a local stand-in, not that photograph.</p>
+              <ul class="tags" aria-label="Techniques used in the CSS Effects Challenge">
+                <li>CSS</li>
+                <li>Google Fonts</li>
+                <li>Hover</li>
+              </ul>
+              <p class="project-path"><code>Creating-CSS-Effects/index.html</code></p>
+              <a class="text-link" href="../Creating-CSS-Effects/index.html">Open CSS Effects Challenge</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="../The-Pet-Shop-Website/images/dog.jpg" alt="Fluffy white and gray Pomeranian puppy from The Pet Shop" width="900" height="600">
+            </div>
+            <div class="project-body">
+              <h3>The Pet Shop</h3>
+              <p>A two-page site, home and contact, written with semantic HTML. The home page introduces cats, dogs, rabbits, guinea pigs, fish, and reptiles. The contact page has a message form and a newsletter checkbox. Photographs are credited in the project’s image credits file. This project does not include a separate stylesheet.</p>
+              <ul class="tags" aria-label="Techniques used in The Pet Shop">
+                <li>HTML</li>
+                <li>Two pages</li>
+                <li>Forms</li>
+              </ul>
+              <p class="project-path"><code>The-Pet-Shop-Website/index.html</code></p>
+              <div class="project-links">
+                <a class="text-link" href="../The-Pet-Shop-Website/index.html">Open The Pet Shop</a>
+                <a class="text-link" href="../The-Pet-Shop-Website/contact.html">Contact page</a>
+                <a class="text-link" href="../The-Pet-Shop-Website/IMAGE-CREDITS.md">Image credits</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media">
+              <img src="../One-Page%20Website/images/porsche.jpg" alt="Black Porsche sports car from the Luxury Cars Gallery" width="2160" height="2700">
+            </div>
+            <div class="project-body">
+              <h3>Luxury Cars Gallery</h3>
+              <p>A single HTML page in the One-Page Website folder. In-page links move between the introduction, a gallery of a Porsche, a Ferrari, and a Lamborghini, a contact form, and an embedded video. Styling is left to the browser.</p>
+              <ul class="tags" aria-label="Techniques used in Luxury Cars Gallery">
+                <li>HTML</li>
+                <li>One page</li>
+                <li>Embed</li>
+              </ul>
+              <p class="project-path"><code>One-Page Website/one_page_website.html</code></p>
+              <a class="text-link" href="../One-Page%20Website/one_page_website.html">Open Luxury Cars Gallery</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="github" aria-labelledby="github-heading">
+      <div class="wrap github-panel">
+        <div>
+          <p class="eyebrow eyebrow-light">GitHub</p>
+          <h2 id="github-heading">Public coursework</h2>
+          <p>My GitHub profile is the public home of this work. The repository linked here is HTML-and-CSS-Projects, which holds the pages in the work section and this portfolio.</p>
+        </div>
+        <div class="github-actions">
+          <a class="button button-light" href="https://github.com/tibibari84-coder" target="_blank" rel="me noopener noreferrer">GitHub profile<span class="visually-hidden"> (opens in a new tab)</span></a>
+          <a class="button button-ghost" href="https://github.com/tibibari84-coder/HTML-and-CSS-Projects" target="_blank" rel="noopener noreferrer">HTML-and-CSS-Projects<span class="visually-hidden"> (opens in a new tab)</span></a>
+          <p class="github-url">github.com/tibibari84-coder</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-contact" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-heading">Prepare a note</h2>
+          <p>The form checks your fields and shows the finished note on this page. It does not send email. This repository has no form endpoint and no stored address or secret.</p>
+          <p>When the note looks right, copy it and continue through GitHub.</p>
+          <noscript>
+            <p class="noscript-note">JavaScript is off, so this form cannot check the note in the page. Project links still work. Use the GitHub profile to get in touch.</p>
+          </noscript>
+        </div>
+
+        <form id="contact-form" class="contact-form" action="#contact" method="post" novalidate>
+          <div class="field">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80">
+            <p id="contact-name-error" class="field-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" aria-describedby="contact-email-hint">
+            <p id="contact-email-hint" class="field-hint">Shown only in the note on this page.</p>
+            <p id="contact-email-error" class="field-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="contact-topic">Topic</label>
+            <select id="contact-topic" name="topic" required>
+              <option value="">Choose a topic</option>
+              <option value="coursework">Coursework question</option>
+              <option value="portfolio">Portfolio feedback</option>
+              <option value="studio">Tiby Design Studio</option>
+              <option value="other">Something else</option>
+            </select>
+            <p id="contact-topic-error" class="field-error" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="6" required minlength="10" maxlength="2000" aria-describedby="contact-message-hint"></textarea>
+            <p id="contact-message-hint" class="field-hint">At least 10 characters.</p>
+            <p id="contact-message-error" class="field-error" hidden></p>
+          </div>
+
+          <button class="button" type="submit">Prepare note</button>
+
+          <div id="form-result" class="form-result" hidden tabindex="-1">
+            <h3>Your note stays on this page</h3>
+            <p>Nothing was sent to a server. Copy the note if you want to share it on GitHub.</p>
+            <pre id="composed-note"></pre>
+            <div class="form-result-actions">
+              <button class="button button-secondary" id="copy-note" type="button">Copy note</button>
+              <a class="button button-secondary" href="https://github.com/tibibari84-coder" target="_blank" rel="noopener noreferrer">Open GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
+            </div>
+            <p id="copy-status" role="status"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-name">Tibor Bari</p>
+        <p>Tiby Design Studio<br>Toronto, Canada</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#github">GitHub</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p><a href="https://github.com/tibibari84-coder" target="_blank" rel="me noopener noreferrer">GitHub profile<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+        <p>AOLCC Scarborough<br>Software and Web Developer program</p>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <p>&copy; 2026 Tibor Bari. Course portfolio for CSS and Bootstrap.</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
