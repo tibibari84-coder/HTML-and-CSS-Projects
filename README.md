@@ -53,10 +53,10 @@ Then open [http://127.0.0.1:8765/Portfolio-Website/](http://127.0.0.1:8765/Portf
 
 Opening `Portfolio-Website/index.html` directly in a browser also works, because the portfolio uses relative paths. Academy Cinemas and the CSS Effects page request fonts or a photograph from the network. The Pet Shop, Simple Recipes, and Luxury Cars Gallery can be reviewed from their own HTML files.
 
-## Deployment readiness
+## Live portfolio — GitHub Pages
 
-GitHub Pages is not turned on for this repository. Nothing here has been deployed. If Pages is later enabled from the `main` branch and the root folder, the portfolio address would be:
+GitHub Pages is enabled for this repository, publishing from the `main` branch and the repository root (`/`). The final CSS and Bootstrap course portfolio is live at:
 
-`https://tibibari84-coder.github.io/HTML-and-CSS-Projects/Portfolio-Website/`
+[View the live portfolio](https://tibibari84-coder.github.io/HTML-and-CSS-Projects/Portfolio-Website/)
 
-Relative links are already written for that repository subpath. The repository does not contain credentials, API keys, or a paid hosting setup.
+The portfolio's relative links are configured for this repository subpath. No credentials, API keys, or paid hosting setup are required.
